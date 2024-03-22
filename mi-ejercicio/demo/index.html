@@ -5,20 +5,30 @@
   <style>
     body {
       background: #fafafa;
+      margin: 0;
+    }
+    header {
+      background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+      margin: 0;
+      padding: 0.5%;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+
+  <header >
+    <h1>Harry Potter Personajes</h1>
+  </header>
   <div id="demo"></div>
 
   <script type="module">
     import { html, render } from 'lit';
     import '../mi-ejercicio.js';
-
-    const header = 'Hello owc World!';
     render(
       html`
-        <mi-ejercicio .header=${header}>
+        <mi-ejercicio>
           some light-dom
         </mi-ejercicio>
       `,
